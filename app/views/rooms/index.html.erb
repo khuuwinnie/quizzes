@@ -1,10 +1,9 @@
-<h1>Renew Sinai: Active Construction Projects</h1>
 <% @rooms.each do |room| %>
   <div class="box col-10 offset-1">
     <h2><%= room.department %></h2>
-    <%= room.building %><br />
-    <%= room.room_num %><br />
-    <p><%= room.description %></p><br />
+    <b>Building:</b>  <%= room.building %><br />
+    <b>Room Number:</b>  <%= room.room_num %><br />
+    <b>Work Description:</b>  <p><%= room.description %></p><br />
   </div>
 <% end %>
 

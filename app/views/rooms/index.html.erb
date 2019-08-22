@@ -1,9 +1,11 @@
-<h1>Welcome to Renew Sinai Phase 3A Active Construction Sites Web App</h1>
-  <%= @rooms.each do |room| %>
-    <div>
-      <h2><%= room.description %></h2><br />
-      <i><%= room.room_number %></i><br />
-    </div>
+<h1>Renew Sinai: Active Construction Projects</h1>
+<%= @rooms.each do |room| %>
+  <div class="box col-10 offset-1">
+    <h2><%= room.department %></h2>
+    <%= room.building %><br />
+    <%= room.room_num %><br />
+    <%= room.description %>
+  </div>
+<% end %>
 
-    <hr />
-  <% end %>
+
